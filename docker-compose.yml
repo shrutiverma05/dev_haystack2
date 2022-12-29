@@ -12,7 +12,7 @@ services:
     restart: always
     environment:
       DOMAINS: 'uat.ml.novacept.io -> http://api:8000'
-      # STAGE: 'production' # Don't use production until staging works
+      STAGE: 'production' # Don't use production until staging works
       # FORCE_RENEW: 'true'
     volumes: 
       - https-portal-data:/var/lib/https-portal
