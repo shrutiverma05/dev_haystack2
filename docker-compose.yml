@@ -6,8 +6,8 @@ services:
       - '443:443'
       - '80:80'
     links:
-      #- elasticsearch
-      #- haystack
+      - elasticsearch
+      - haystack
       - api
     restart: always
     environment:
